@@ -6,13 +6,30 @@
     <title>Harvest Hub</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
     <!-- CSS -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar main-menu navbar-expand-md">
       <div class="container-xl">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="assets/images/logo.png" width="230" alt="HarvestHub" />
         </a>
         <button
@@ -29,29 +46,39 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="marketplace.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Marketplace
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="marketplace.html"
+                    >Seeds and Plants</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="marketplace.html"
+                    >Fertilizers and Soil Amendments</a
+                  >
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="marketplace.html"
+                    >Check your orders</a
+                  >
                 </li>
               </ul>
             </li>
@@ -63,24 +90,32 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Services
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Farm Management Services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Crop Monitoring and Analysis</a
+                  >
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Training and Workshops</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Another Link</a>
+              <a class="nav-link" href="#about">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Another Link</a>
+              <a class="nav-link" href="register.html">Register</a>
             </li>
           </ul>
           <div class="search-and-icons">
@@ -99,7 +134,7 @@
           </div>
           <div class="contact-info d-md-flex">
             <p>+0987654321 | +1234567890</p>
-            <p><a href="mailto:">contact@domainname.com</a></p>
+            <p><a href="mailto:">contact@harvesthub.com</a></p>
           </div>
         </div>
       </div>
@@ -107,8 +142,412 @@
 
     <!-- Navbar /-->
 
+    <!-- Hero Section -->
+
+    <div
+      class="d-sm-flex align-items-center justify-content-between w-100 hero-section"
+      style="height: 100vh"
+    >
+      <div class="col-md-4 mx-auto mb-4 mb-sm-0 headline">
+        <div class="px-5 text-center text-md-start">
+          <span class="text-secondary text-uppercase">Empowering Farmers</span>
+          <h1 class="display-4 my-4 font-weight-bold">
+            Welcome to <span style="color: #89c74a">HarvestHub</span>
+          </h1>
+          <a
+            href="#"
+            class="btn btn-primary px-5 py-3 text-white mt-3 mt-sm-0"
+            style="border-radius: 30px"
+            >Get Started</a
+          >
+        </div>
+      </div>
+      <!-- in mobile remove the clippath -->
+      <div class="col-md-8 h-100 clipped hero-image"></div>
+    </div>
+
+    <!-- Hero Section /-->
+
+    <!-- About HarvestHub -->
+    <section id="about" class="py-5 mt-5">
+      <div class="container mt-5">
+        <h1 class="text-center mb-5">About Harvest Hub</h1>
+        <div class="px-md-5">
+          <p>
+            At Harvest Hub, we celebrate the inventiveness and rich history of
+            agriculture, positioning ourselves as a flourishing hub that merges
+            modern technology with time-honored traditions. More than just a
+            website, Harvest Hub is a thriving community that unites industry
+            professionals, enthusiasts, and farmers worldwide.
+          </p>
+        </div>
+
+        <div class="row gallery">
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/2.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/2.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/3.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/3.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/4.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/4.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/5.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/5.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/6.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/6.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/7.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/7.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/8.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/8.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="assets/images/gallery/9.jpg">
+              <figure>
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="assets/images/gallery/9.jpg"
+                  alt="Random Image"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About HarvestHub /-->
+
+    <!-- What Our Farmers Say -->
+
+    <section class="pt-5 pb-5 bg-light">
+      <div class="testimonial">
+        <div class="container">
+          <h2 class="text-center mb-5 text-primary">
+            What our Farmers say about us
+          </h2>
+          <div class="testimonial__inner">
+            <div class="testimonial-slider">
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>
+                          Harvest Hub transformed my organic farming journey.
+                          Connecting directly with eco-conscious consumers and
+                          accessing a wealth of sustainable farming!
+                        </p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="assets/images/f-1.jpg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>John D</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Organic Farmer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>
+                          Harvest Hub: Seeds, insights, and a vibrant community
+                          all in one place. Perfect for crop enthusiasts like
+                          me, fostering sustainable practices and connecting
+                          with fellow farmers.
+                        </p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="assets/images/f-2.jpg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Marsem S.</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Crop Enthusiast</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>
+                          Harvest Hub simplifies my livestock needs. From
+                          quality equipment to educational resources, it's more
+                          than a marketplace—it's a thriving agricultural
+                          community.
+                        </p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="assets/images/f-3.jpg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Samuel G</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Livestock Breeder</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>
+                          Harvest Hub is my ally in sustainable farming.
+                          Promoting eco-friendly practices and providing
+                          agroecological resources.
+                        </p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="assets/images/f-4.jpg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Emal R</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Sustainable Agriculture Advocate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Our Farmers Say /-->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>9876543210 0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="assets/images/logo.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    At Harvest Hub, we celebrate the inventiveness and rich
+                    history of agriculture, positioning ourselves as a
+                    flourishing hub that merges modern technology with
+                    time-honored traditions.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="services.html">services</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Farmers</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2024, All Right Reserved
+                  <a href="#">HarvestHub</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer /-->
+
     <!-- JS -->
+    <script src="assets/js/vendors/jquery.js"></script>
     <script src="assets/js/vendors/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
