@@ -1,0 +1,41 @@
+// Theme Colors
+$primary: #89c74a;
+$secondary: #232323;
+$success: #162c1f;
+$dark: #0d0e0d;
+$light: #f0f7ef;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $secondary;
+  overflow-x: hidden;
+}
+
+// Custom Scrollbar
+
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary; /* Color of the thumb */
+  border-radius: 6px; /* Round the corners of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #73ad3a; /* Color of the thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: $secondary; /* Color of the track */
+  border-radius: 6px; /* Round the corners of the track */
+}
+
+::-webkit-scrollbar-corner {
+  background-color: $secondary; /* Color of the corner */
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

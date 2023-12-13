@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harvest Hub</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <!-- CSS -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar main-menu navbar-expand-md">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" width="230" alt="HarvestHub" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="marketplace.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Marketplace
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="marketplace.html"
+                    >Seeds and Plants</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="marketplace.html"
+                    >Fertilizers and Soil Amendments</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="marketplace.html"
+                    >Check your orders</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Farm Management Services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Crop Monitoring and Analysis</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Training and Workshops</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+          </ul>
+          <div class="search-and-icons">
+            <form class="d-flex mb-2 me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                aria-label="Search"
+              />
+            </form>
+            <div class="user-icons d-flex mb-2">
+              <div class="profile"><i class="bi bi-person"></i></div>
+              <div class="wishlist"><i class="bi bi-heart"></i></div>
+              <div class="cart"><i class="bi bi-cart3"></i></div>
+            </div>
+          </div>
+          <div class="contact-info d-md-flex">
+            <p>+0987654321 | +1234567890</p>
+            <p><a href="mailto:">contact@harvesthub.com</a></p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar /-->
+
+    <!-- Register -->
+    <div class="register bg-secondary">
+      <div class="form-body">
+        <div class="row">
+          <div class="form-holder">
+            <div class="form-content">
+              <div class="form-items">
+                <h3>Register Today</h3>
+                <p>Fill in the data below.</p>
+                <form class="requires-validation" novalidate>
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="name"
+                      placeholder="Full Name"
+                      required
+                    />
+                    <div class="valid-feedback">Username field is valid!</div>
+                    <div class="invalid-feedback">
+                      Username field cannot be blank!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      placeholder="E-mail Address"
+                      required
+                    />
+                    <div class="valid-feedback">Email field is valid!</div>
+                    <div class="invalid-feedback">
+                      Email field cannot be blank!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <select class="form-select mt-3" required>
+                      <option selected disabled value="">Farmer</option>
+                      <option value="jweb">Student</option>
+                      <option value="sweb">Agribusiness Professional</option>
+                      <option value="pmanager">Agronomist</option>
+                    </select>
+                    <div class="valid-feedback">You selected a position!</div>
+                    <div class="invalid-feedback">
+                      Please select a position!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                      required
+                    />
+                    <div class="valid-feedback">Password field is valid!</div>
+                    <div class="invalid-feedback">
+                      Password field cannot be blank!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mt-3 bg-primary gender">
+                    <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="gender"
+                      id="male"
+                      autocomplete="off"
+                      required
+                    />
+                    <label class="btn btn-sm btn-outline-secondary" for="male"
+                      >Male</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="gender"
+                      id="female"
+                      autocomplete="off"
+                      required
+                    />
+                    <label class="btn btn-sm btn-outline-secondary" for="female"
+                      >Female</label
+                    >
+
+                    <div class="valid-feedback mv-up">
+                      You selected a gender!
+                    </div>
+                    <div class="invalid-feedback mv-up">
+                      Please select a gender!
+                    </div>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label"
+                      >I confirm that all data are correct</label
+                    >
+                    <div class="invalid-feedback">
+                      Please confirm that the entered data are all correct!
+                    </div>
+                  </div>
+
+                  <div class="form-button mt-3">
+                    <button id="submit" type="submit" class="btn btn-primary">
+                      Register
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Register /-->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>9876543210 0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="assets/images/logo.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    At Harvest Hub, we celebrate the inventiveness and rich
+                    history of agriculture, positioning ourselves as a
+                    flourishing hub that merges modern technology with
+                    time-honored traditions.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="services.html">services</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Farmers</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2024, All Right Reserved
+                  <a href="#">HarvestHub</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer /-->
+
+    <!-- JS -->
+    <script src="assets/js/vendors/jquery.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

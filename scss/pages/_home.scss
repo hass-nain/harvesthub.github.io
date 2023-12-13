@@ -1,0 +1,299 @@
+@use "../custom" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.headline {
+  left: 130px;
+}
+.clipped {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media screen and (max-width: 650px) {
+  .headline {
+    left: 20px;
+  }
+  .clipped {
+    clip-path: none;
+    max-height: 300px !important;
+  }
+}
+
+.hero-section {
+  margin-top: 3rem;
+
+  @media (max-width: 576px) {
+    margin-top: 12rem;
+  }
+}
+
+.hero-image {
+  min-height: 350px;
+  background-image: url(../images/2.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+// What our Farmers Say
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonial {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-slide {
+    padding: 40px 20px;
+  }
+  &_box {
+    &-top {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 5px 5px 20px rgba(152, 193, 217, 0.493);
+    }
+    &-icon {
+      padding: 10px 0;
+      i {
+        font-size: 25px;
+        color: #14213d;
+      }
+    }
+    &-text {
+      padding: 10px 0;
+      p {
+        color: #293241;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+      }
+    }
+    &-img {
+      padding: 20px 0 10px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        border: 2px solid #e5e5e5;
+      }
+    }
+    &-name {
+      padding-top: 10px;
+      h4 {
+        font-size: 20px;
+        line-height: 25px;
+        color: #293241;
+        margin-bottom: 0;
+      }
+    }
+    &-job {
+      p {
+        color: #293241;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 20px;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// About
+
+/* Start Gallery CSS */
+.thumb {
+  margin-bottom: 15px;
+}
+.thumb:last-child {
+  margin-bottom: 0;
+}
+.thumb figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.thumb figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: $white;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid $secondary;
+}
+.single-cta i {
+  color: $primary;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #55acee;
+}
+.google-bg {
+  background: #dd4b39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: $primary;
+}
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+  color: $primary;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: $primary;
+  padding: 13px 20px;
+  border: 1px solid $primary;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: $primary;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: $primary;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}

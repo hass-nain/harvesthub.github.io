@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harvest Hub</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <!-- CSS -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar main-menu navbar-expand-md">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" width="230" alt="HarvestHub" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Farm Management Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Crop Monitoring and Analysis</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Training and Workshops</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+          </ul>
+          <div class="search-and-icons">
+            <form class="d-flex mb-2 me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                aria-label="Search"
+              />
+            </form>
+            <div class="user-icons d-flex mb-2">
+              <div class="profile"><i class="bi bi-person"></i></div>
+              <div class="wishlist"><i class="bi bi-heart"></i></div>
+              <div class="cart"><i class="bi bi-cart3"></i></div>
+            </div>
+          </div>
+          <div class="contact-info d-md-flex">
+            <p>+0987654321 | +1234567890</p>
+            <p><a href="mailto:">contact@harvesthub.com</a></p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar /-->
+
+    <!-- Marketplace -->
+    <div class="marketplace">
+      <div class="container bg-white">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand text-uppercase fw-800" href="#"
+              ><span class="border-red pe-2">New</span>Product</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#myNav"
+              aria-controls="myNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="#">All</a>
+                <a class="nav-link" href="#">Seeds</a>
+                <a class="nav-link" href="#">Fertilizers</a>
+                <a class="nav-link" href="#">Tools</a>
+                <a class="nav-link" href="#">Chemicals</a>
+                <a class="nav-link" href="#">Soil</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="row">
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/1.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="tag bg-red">sale</div>
+            <div class="title pt-4 pb-1">Peaches</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 60.0</div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/10.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="tag bg-black">out of stock</div>
+            <div class="title pt-4 pb-1">Kiwi</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 55.0</div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/14.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="tag bg-green">new</div>
+            <div class="title pt-4 pb-1">Onions</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 70.0</div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/15.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="title pt-4 pb-1">Green Veg Seeds</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 60.0</div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/2.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="tag bg-red">sale</div>
+            <div class="title pt-4 pb-1">Pears</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 60.0</div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/16.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="tag bg-black">out of stock</div>
+            <div class="title pt-4 pb-1">Melon Seeds</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 55.0</div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/13.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="title pt-4 pb-1">Plums</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 70.0</div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
+          >
+            <div class="product">
+              <img src="assets/images/product/5.png" alt="" />
+              <ul
+                class="d-flex align-items-center justify-content-center list-unstyled icons"
+              >
+                <li class="icon">
+                  <span class="fas fa-expand-arrows-alt"></span>
+                </li>
+                <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+              </ul>
+            </div>
+            <div class="tag bg-green">new</div>
+            <div class="title pt-4 pb-1">Mangoo Seeds</div>
+            <div class="d-flex align-content-center justify-content-center">
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+              <span class="fas fa-star"></span>
+            </div>
+            <div class="price">Rs: 60.0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Marketplace /-->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>9876543210 0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="assets/images/logo.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    At Harvest Hub, we celebrate the inventiveness and rich
+                    history of agriculture, positioning ourselves as a
+                    flourishing hub that merges modern technology with
+                    time-honored traditions.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Farmers</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2024, All Right Reserved
+                  <a href="#">HarvestHub</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer /-->
+
+    <!-- JS -->
+    <script src="assets/js/vendors/jquery.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
